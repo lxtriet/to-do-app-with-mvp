@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hcmute.trietthao.yourtime">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!--<uses-feature-->
+        <!--android:name="android.hardware.camera.any"-->
+        <!--android:required="true" />-->
+    <!--<uses-feature-->
+        <!--android:name="android.hardware.camera.autofocus"-->
+        <!--android:required="false" />-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-feature android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_yourtime"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_yourtime"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity android:name=".mvp.login.view.LoginActivity">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity android:name=".mvp.signUp.view.SignUpActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".mvp.login.view.LoginActivity" />
+        </activity>
+        <activity android:name=".mvp.signIn.view.SignInActivity">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity android:name=".mvp.settingFragment.view.ExtrasActivity"/>
+        <activity android:name=".mvp.settingFragment.view.GeneralActivity"/>
+        <activity android:name=".mvp.detailGroupWork.view.DetailGroupWorkActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+
+        <activity android:name=".mvp.detailWork.view.DetailWorkActivity"
+            android:parentActivityName=".mvp.detailGroupWork.view.DetailGroupWorkActivity"
+          >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".mvp.detailWork.view.DetailWorkActivity" />
+        </activity>
+        <activity
+            android:name=".mvp.detailGroupWorkMain.view.DetailGroupWorkMainActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".mvp.createGroupWork.view.CreateGroupWorkActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity android:name=".mvp.searchWork.view.SearchWorkViewActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+
+        <activity android:name=".mvp.chooseList.view.ChooseListActivity">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <!--<activity android:name=".CalendarFragment">-->
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
+
+        <activity android:name=".mvp.addANote.view.AddANoteActivity"
+            android:parentActivityName=".mvp.detailWork.view.DetailWorkActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".mvp.detailWork.view.DetailWorkActivity" />
+        </activity>
+        <activity android:name=".mvp.accountDetails.view.AccountDetailsActivity"/>
+        <receiver android:name=".broadcast.BroadcastDone">
+            <intent-filter>
+                <action android:name="done_work"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".broadcast.BroadcastDismiss">
+            <intent-filter>
+                <action android:name="dismiss_work"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".broadcast.NotificationPublisher" />
+
+    </application>
+
+
+</manifest>

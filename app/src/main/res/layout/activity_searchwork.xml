@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen_background2">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bartasks_60dp"
+        android:background="@color/colorTear800"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+
+                android:id="@+id/etxt_search"
+                android:textColor="@color/colorWhite"
+                android:gravity="center_vertical"
+                android:hint="Search . . ."
+                android:backgroundTint="@android:color/transparent"
+                android:textSize="@dimen/dimen_18sp"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/iv_clear_search"
+                android:orientation="horizontal"
+                app:srcCompat="@drawable/ic_clear_white_24dp"
+                android:padding="10dp"
+                >
+            </ImageView>
+
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bartasks_60dp"
+        android:background="@color/colorBlue"
+        android:id="@+id/lnlayout_longclick_work"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/iv_back_longclick_itemwork"
+            app:srcCompat="@drawable/ic_arrow_back_white_24dp"
+            android:padding="15dp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:text="1 item selected"
+            android:id="@+id/tv_name_item_work_selected"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/txt_toolbar_18sp"
+            android:textColor="@color/colorWhite"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/iv_change_group"
+            app:srcCompat="@drawable/ic_transform_white_24dp"
+            android:padding="15dp"
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/iv_delete_item_work"
+            app:srcCompat="@drawable/ic_delete_white_24dp"
+            android:padding="15dp"
+            />
+    </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ExpandableListView
+                android:id="@+id/list_groupworks_works_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                >
+            </ExpandableListView>
+            <ProgressBar
+                android:id="@+id/progressBar_Loadmore"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="20dp"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:indeterminateTintMode="src_atop"
+                android:indeterminateTint="@color/colorTear800"/>
+        </RelativeLayout>
+
+
+
+</LinearLayout>

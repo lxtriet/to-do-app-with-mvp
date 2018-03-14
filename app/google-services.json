@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "600077899420",
+    "project_id": "yourtime-29c57"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:600077899420:android:0994c7925baedd43",
+        "android_client_info": {
+          "package_name": "com.hcmute.trietthao.yourtime"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "600077899420-1aqqf981hcs1a2gpvfedak0kb1ifbatp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hcmute.trietthao.yourtime",
+            "certificate_hash": "2a0eef411721c2c70e7870b5872e012974e8129c"
+          }
+        },
+        {
+          "client_id": "600077899420-bgij2iblr3f794al9lpp7i549u066a89.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMDh5ULzOaFBWNkBJdOUFn45Y2BeSOfoE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

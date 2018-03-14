@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen_background2">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bartasks_60dp"
+        android:background="@color/colorTear800"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="Name GroupWork"
+                android:id="@+id/tv_name_groupwork"
+                android:textColor="@color/colorWhite"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/dimen_18sp"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bartasks_60dp"
+        android:background="@color/colorBlue"
+        android:id="@+id/lnlayout_longclick_work"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/iv_back_longclick_itemwork"
+            app:srcCompat="@drawable/ic_arrow_back_white_24dp"
+            android:padding="15dp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:text="1 item selected"
+            android:id="@+id/tv_name_item_work_selected"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/txt_toolbar_18sp"
+            android:textColor="@color/colorWhite"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/iv_delete_item_work"
+            app:srcCompat="@drawable/ic_delete_white_24dp"
+            android:padding="15dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnlayout_add_todos"
+        android:baselineAligned="false"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_groupwork_50dp"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:background="@drawable/border_tear">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_add_medium"
+                android:gravity="center_vertical"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:focusable="false"
+                android:hint="@string/add_todo_edittext"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite"
+                android:textSize="@dimen/txtsize_16sp"
+                android:backgroundTint="@android:color/transparent"
+                >
+
+            </EditText>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_star_white"
+            android:padding="@dimen/padding_5dp"
+            />
+
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/progressBar_Loadmore"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:indeterminateTintMode="src_atop"
+        android:indeterminateTint="@color/colorTear800"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/lnl_groupempty"
+        android:background="@color/colorTear800"
+        >
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:id="@+id/img_groupempty"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_groupempty"
+            android:gravity="center"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/txtsize_16sp"
+            android:layout_marginBottom="15dp"
+            />
+    </LinearLayout>
+
+
+
+    <ExpandableListView
+        android:id="@+id/list_groupworks_works"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:focusable="true"
+        >
+    </ExpandableListView>
+
+
+</LinearLayout>

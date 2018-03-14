@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlue">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/image_user1"
+                android:padding="@dimen/padding_5dp"
+                android:id="@+id/item_chat_civ_member"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/item_chat_civ_member"
+                android:text="Ltthao"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_18sp"
+                android:id="@+id/item_chat_txt_name_user"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/item_chat_civ_member"
+                android:text="nội dung chat"
+                android:id="@+id/item_member_txt_mail"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="25dp"/>
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="25dp"
+                android:layout_toEndOf="@id/item_chat_txt_name_user"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/just_now"
+                android:textColor="@color/colorGray500"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

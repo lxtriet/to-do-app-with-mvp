@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#ffffff</color>
+
+    <color name="colorBackground1">#668964</color>
+
+    <color name="colorTransparency_80percent">#b3ffffff</color>
+    <color name="colorTransparency_0percentt">#00ffffff</color>
+    <color name="deepskyblue">#58ACFA</color>
+    <color name="dodgerblue">#1E90FF</color>
+    <color name="blue">#0000FF</color>
+    <color name="colorNearBlue">#aa58dcfa</color>
+    <color name="colortran">#80FFFFFF</color>
+    <color name="colorFb">#3C579E</color>
+    <color name="colorGoogle">#EE4000</color>
+    <color name="colorblue">#02a0e9</color>
+    <color name="black">#000000</color>
+    <color name="colorEditText">#b3807b7b</color>
+    <color name="lowBlack">#b3454343</color>
+    <color name="colorPink">#F3D0CF</color>
+    <color name="colorRed">#fa0903</color>
+    <color name="pink">#fa3b5a</color>
+
+    <color name="colorGray100">#F5F5F5</color>
+    <color name="colorGray300">#E0E0E0</color>
+    <color name="colorGray400">#BDBDBD</color>
+    <color name="colorGray500">#9E9E9E</color>
+    <color name="colorGray600">#757575</color>
+    <color name="colorGray800">#424242</color>
+
+    <color name="colorGreen800">#00897B</color>
+    <color name="colorGreen">#03fa2c</color>
+    <color name="colorGreen2">#8BC454</color>
+    <color name="colorNearGreen">#b96efa03</color>
+
+    <color name="colorTear800">#537F70</color>
+    <color name="colorTear900">#004D40</color>
+
+    <color name="colorLightGreen800">#558B2F</color>
+    <color name="colorLightGreen900">#33691E</color>
+
+    <color name="colorBlue">#0099CC</color>
+
+    <color name="colorYellow100">#FFF9C4</color>
+    <color name="colorYellow300">#FFF176</color>
+    <color name="colorYellow500">#FFEB3B</color>
+    <color name="colorYellow900">#F57F17</color>
+
+
+    <color name="colorBlue100">#BBDEFB</color>
+    <color name="colorScreenBackground2">#2F6251</color>
+    <color name="colorItemWorkCompleted">#BBCAC5</color>
+
+    <!--color calendar-->
+    <color name="event_color_01">#59dbe0</color>
+    <color name="event_color_02">#f57f68</color>
+    <color name="event_color_03">#87d288</color>
+    <color name="event_color_04">#f8b552</color>
+    <color name="toolbar">#efefef</color>
+    <color name="toolbar_text">#8f000000</color>
+    <color name="accent">#2789e4</color>
+    <color name="royalBlue">#4169E1</color>
+</resources>

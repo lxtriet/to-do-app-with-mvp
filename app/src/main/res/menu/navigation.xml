@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_tasks"
+        android:icon="@drawable/main_tabs_icon_tasks_unselected"
+        android:title="@string/title_tasks" />
+
+    <item
+        android:id="@+id/navigation_calendar"
+        android:icon="@drawable/main_tabs_icon_calendar_unselected"
+        android:title="@string/title_calendar"
+        android:alphabeticShortcut="26"
+        android:numericShortcut="26"/>
+
+    <item
+
+        android:id="@+id/navigation_setting"
+        android:icon="@drawable/main_tabs_icon_settings_unselected"
+        android:title="@string/title_settings" />
+
+</menu>
